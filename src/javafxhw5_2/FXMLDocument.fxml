@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxhw5_2.FXMLDocumentController">
+   <children>
+      <Text layoutX="88.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This app will animate the rectangle based on the order of the options selected:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="667.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Options:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="translateBox" layoutX="667.0" layoutY="104.0" mnemonicParsing="false" text="Translate">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="fadeBox" disable="true" layoutX="667.0" layoutY="206.0" mnemonicParsing="false" selected="true" text="Fade">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="scaleBox" disable="true" layoutX="667.0" layoutY="172.0" mnemonicParsing="false" selected="true" text="Scale">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="rotateBox" layoutX="667.0" layoutY="138.0" mnemonicParsing="false" text="Rotate">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <RadioButton fx:id="parallelRadio" layoutX="667.0" layoutY="243.0" mnemonicParsing="false" selected="true" text="Parallel">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="choices" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="seqRadio" layoutX="667.0" layoutY="278.0" mnemonicParsing="false" text="Sequential" toggleGroup="$choices">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="play" layoutX="664.0" layoutY="313.0" mnemonicParsing="false" text="Play">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Rectangle fx:id="rectShape" arcHeight="60.0" arcWidth="60.0" fill="BROWN" height="83.0" layoutX="293.0" layoutY="247.0" stroke="BLACK" strokeWidth="0.0" width="117.0" />
+   </children>
+</AnchorPane>
